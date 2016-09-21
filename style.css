@@ -1,0 +1,41 @@
+/* Selector specificity Rules */
+
+/* Later rules trump earlier rules
+
+p {
+	color: red;
+}
+
+p {
+	color: green;
+}
+
+The font will be green */
+
+/* Later rules trump earlier rules but there are exceptions. For example:
+
+#test p {
+	color: red;
+}
+
+p {
+	color green;
+}
+
+The font will be red because the selector is more specific */
+
+/* Point system 
+
+class = 10 points
+html = 1 point
+id = 100 points 
+
+Examples:;
+
+body #wrap p { background: yellow; } 1 + 100 + 1 = 102
+
+#test {background : red;} 100
+
+.item p { background : orange; } 11
+
+p { background : green; } 1 */
